@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada - Branco Editor</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-title { font-family: 'Roboto', sans-serif; }
+        .font-sans { font-family: 'Montserrat', sans-serif; }
+        .dark-blue-gradient-text {
+            background: linear-gradient(145deg, #1E3A8A, #3B82F6, #EFF6FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#141414] text-[#F5F5F5] font-sans flex items-center justify-center h-screen">
+
+    <div class="text-center p-8 bg-gray-800 rounded-lg shadow-2xl border border-gray-700">
+        <h1 class="font-title text-4xl font-bold mb-4 dark-blue-gradient-text">Mensagem Enviada!</h1>
+        <p class="text-lg text-gray-300 mb-8">Obrigado pelo seu contato. Em breve retornarei.</p>
+        <!-- LINK CORRIGIDO PARA SER RELATIVO -->
+        <a href="./" class="inline-block bg-gradient-to-r from-[#2563EB] to-[#1D4ED8] text-white font-bold py-3 px-8 rounded-lg hover:from-[#1D4ED8] hover:to-[#2563EB] transition-all duration-300 text-lg">
+            Voltar ao Portfólio
+        </a>
+    </div>
+
+</body>
+</html>
