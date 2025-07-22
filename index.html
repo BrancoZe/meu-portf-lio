@@ -289,7 +289,7 @@
                     </svg>
                     <span class="text-lg font-semibold">Contate-me</span>
                 </a>
-                <a href="https://www.instagram.com/a_santos77/" target="_blank" class="group flex items-center gap-3 text-gray-400 hover:text-[#3B82F6] transition-colors">
+                <a href="https://www.instagram.com/euailton_santos?igsh=MTJtNTF2bW5mcTV2eQ==" target="_blank" class="group flex items-center gap-3 text-gray-400 hover:text-[#3B82F6] transition-colors">
                     <svg class="group-hover:scale-110 transition-transform" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                     <span class="text-lg font-semibold">Mais sobre mim</span>
                 </a>
@@ -299,13 +299,13 @@
 
     <!-- FOOTER -->
     <footer class="bg-[#1a1a1a] py-6 text-center text-gray-500">
-        <p>© <span id="current-year"></span> Branco Editor. Todos os direitos reservados.</p>
+        <p>&copy; <span id="current-year"></span> Branco Editor. Todos os direitos reservados.</p>
     </footer>
 
     <!-- MODAL DE PROJETO -->
     <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm z-50 hidden items-center justify-center p-4 md:p-8 transition-opacity duration-300">
         <div class="bg-[#1a1a1a] w-full max-w-6xl max-h-[90vh] rounded-lg shadow-2xl relative border border-gray-700 flex flex-col lg:flex-row">
-            <button id="close-project-modal-btn" class="absolute -top-4 -right-4 bg-white text-black rounded-full h-10 w-10 flex items-center justify-center font-bold text-2xl z-20 leading-none">×</button>
+            <button id="close-project-modal-btn" class="absolute -top-4 -right-4 bg-white text-black rounded-full h-10 w-10 flex items-center justify-center font-bold text-2xl z-20 leading-none">&times;</button>
             
             <div id="video-player-container" class="w-full lg:w-2/3 bg-black rounded-t-lg lg:rounded-l-lg lg:rounded-r-none">
                 <!-- O iframe será inserido aqui pelo JS -->
@@ -334,16 +334,14 @@
     </div>
     
     <!-- MODAL DE FORMULÁRIO DE CONTATO -->
-    <!-- Nota: A opacidade do fundo e a cor do modal foram ajustadas para aumentar o contraste e a legibilidade -->
-    <div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-95 backdrop-blur-md z-50 hidden items-center justify-center p-4 transition-opacity duration-300">
-        <div class="bg-gray-800 w-full max-w-lg rounded-lg shadow-2xl shadow-black/50 relative p-8 border border-gray-700">
-            <button id="close-contact-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">×</button>
+    <div id="contact-modal" class="fixed inset-0 bg-black bg-opacity-90 backdrop-blur-sm z-50 hidden items-center justify-center p-4 transition-opacity duration-300">
+        <div class="bg-[#1a1a1a] w-full max-w-lg rounded-lg shadow-2xl shadow-black/50 relative p-8 border border-gray-700">
+            <button id="close-contact-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors">&times;</button>
             <h3 class="font-title font-bold text-2xl mb-6 text-center dark-blue-gradient-text title-shadow uppercase">Mande um E-mail</h3>
-            <!-- FORMULÁRIO ATUALIZADO PARA FORMSFREE.IO -->
-            <form action=https://formspree.io/f/mwpqvdpe method="POST" class="space-y-4">
-                <!-- REDIRECIONAMENTO ATUALIZADO PARA FORMSFREE.IO -->
-                <input type="hidden" name="redirect" value="https://brancoze.github.io/meu-portf-lio/obrigado.html">
-                
+            <form action="https://formspree.io/f/mwpqvdpe" method="POST" class="space-y-4">
+                <!-- Linha adicionada para redirecionar para a página de agradecimento -->
+                <input type="hidden" name="_next" value="./obrigado.html">
+
                 <div>
                     <label for="name" class="block text-sm font-bold text-gray-400 mb-1">Nome</label>
                     <input type="text" name="name" id="name" required class="w-full bg-[#141414] border border-gray-600 rounded-md p-2 text-white focus:outline-none focus:ring-2 focus:ring-[#3B82F6]">
